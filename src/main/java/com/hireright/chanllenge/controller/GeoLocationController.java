@@ -21,13 +21,7 @@ public class GeoLocationController extends HttpServlet implements BaseController
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-
-       /* BufferedReader reader = req.getReader();
-        StringBuilder buffer = new StringBuilder();
-        while (reader.readLine() != null) {
-            buffer.append(reader.read());
-        }
-        String zip = buffer.toString();*/
+        
        String zip= IOUtils.toString(req.getReader());
         GeoLocation geoLocation = geoLocationService.findByZip(zip);
         if (geoLocation == null) {
