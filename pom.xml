@@ -14,7 +14,7 @@
         <commons-io.version>2.4</commons-io.version>
         <commons-lang3.version>3.4</commons-lang3.version>
         <javaee.version>8.0</javaee.version>
-        <jackson.version>2.7.0</jackson.version>
+        <jackson.version>2.10.3</jackson.version>
         <slf4j.version>1.7.5</slf4j.version>
     </properties>
     <dependencies>
